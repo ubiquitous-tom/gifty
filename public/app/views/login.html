@@ -1,0 +1,45 @@
+<div class="login-page">
+	<div class="img-container">
+		<div class="text-center pull-right photo">
+			<img src="images/flat-avatar.png" class="user-avatar img-circle img-responsive" />
+				<h1>ReGifter<br/ > <span>For the Forgetfuls</span><!-- <br /><small>Free Version</small> --></h1>
+			</div>
+		</div>
+		
+		<div class="form-content">
+			<!-- <div class="pro-link">
+				<a href="http://www.strapui.com/">MORE PREMIUM THEME</a>
+			</div> -->
+      <div ng-show="error" class="alert alert-danger">{{error}}</div>
+			<form role="form" class="bottom-75" ng-submit="login()">
+			<div class="table-form">
+				<div class="form-groups">
+					<div class="form-group">
+						<input type="text" class="form-control input-lg" id="username" placeholder="EMAIL" ng-model="username">
+            <span ng-show="form.username.$dirty && form.username.$error.required" class="help-block">Username is required</span>
+					</div>
+					<div class="form-group">
+						<input type="password" class="form-control input-lg" id="password" placeholder="PASSWORD" ng-model="password">
+            <span ng-show="form.password.$dirty && form.password.$error.required" class="help-block">Password is required</span>
+					</div>
+				</div>	
+				<div class="button-container">
+					<button type="submit" ng-disabled="form.$invalid || dataLoading" class="btn btn-default login"><img src="images/arrow.png" alt=""></button>
+          <img ng-if="dataLoading" src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA=="/>
+				</div>
+			</div>
+			<div class="remember">
+				<label class="checkbox1" for="Option"> 
+					<input id="Option" type="checkbox" class="">
+					<span></span>
+				</label>
+				remember me
+				<span class="pass"> forgot password?</span>
+        <div class="signup">
+          <span class="pass"> sign up?</span>
+        </div>
+			</div>			
+			</form>
+		</div>			
+	</div>
+</div>
